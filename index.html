@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Basketball Scoreboard</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <main class="wrap">
+    <h1 class = "main-title">Scoreboard </h1>
+    <div class="board">
+      <section class="team">
+        <h3 class="title">HOME</h3>
+        <div class="score-box">
+          <p id="home-score" class="score">0</p>
+        </div>
+        <div class="btn-row">
+          <button class="btn" onclick="add1_h()">+1</button>
+          <button class="btn" onclick="add2_h()">+2</button>
+          <button class="btn" onclick="add3_h()">+3</button>
+          <button class="btn" onclick="minus1_h()">-1</button>
+        </div>
+      </section>
+
+      <section class="team">
+        <h3 class="title">GUEST</h3>
+        <div class="score-box">
+          <p id="guest-score" class="score">0</p>
+        </div>
+        <div class="btn-row">
+          <button class="btn" onclick="add1_g()">+1</button>
+          <button class="btn" onclick="add2_g()">+2</button>
+          <button class="btn" onclick="add3_g()">+3</button>
+          <button class="btn" onclick="minus1_g()">-1</button>
+        </div>
+      </section>
+    </div>
+
+    <div class="reset-row">
+      <button class="reset" onclick="reset()">Reset</button>
+    </div>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>
